@@ -1,0 +1,9 @@
+.text-success{
+    color: green;
+} 
+.text-warning{
+    color: red;
+} 
+.text-format{   
+    font-style: italic;
+}
