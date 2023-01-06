@@ -13,6 +13,9 @@ import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.com
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { EmployeeService } from './employee.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,14 +28,16 @@ import { ComponentInteractionComponent } from './component-interaction/component
     TemplateRefVarComponent,
     TwoWayBindingComponent,
     StructuralDirectivesComponent,
-    ComponentInteractionComponent
+    ComponentInteractionComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1> {{title}} </h1>
-  <!-- <app-test></app-test> -->
+  <app-test></app-test>
   <app-event-binding></app-event-binding> <br>
   <app-property-binding> </app-property-binding> <br>
   <app-class-binding> </app-class-binding> <br>
@@ -17,6 +17,7 @@
   <app-structural-directives> </app-structural-directives> 
   <app-component-interaction (childEvent)="message=$event" [myName]="myName"> </app-component-interaction>
   {{message}}
+  <app-pipes> </app-pipes>
 
 </body>
 </html > 
