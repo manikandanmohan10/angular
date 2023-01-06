@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  /** Sending this value from parent(App) component to child(component_interaction) component */
+  public myName = 'Manikandan';
+  public message = "";
 }

@@ -12,6 +12,7 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
     StyleBindingComponent,
     TemplateRefVarComponent,
     TwoWayBindingComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    ComponentInteractionComponent
   ],
   imports: [
     BrowserModule,
