@@ -6,8 +6,18 @@
   <title>Document</title>
 </head>
 <body>
+  <nav>
+    <a routerLink="/departments"><button>Departments</button></a>
+    <a routerLink="/employees"><button>Employees</button></a>
+  </nav>
+
+
+
+
+
+
   <h1> {{title}} </h1>
-  <app-test></app-test>
+  <!-- <app-test></app-test>
   <app-event-binding></app-event-binding> <br>
   <app-property-binding> </app-property-binding> <br>
   <app-class-binding> </app-class-binding> <br>
@@ -17,7 +27,9 @@
   <app-structural-directives> </app-structural-directives> 
   <app-component-interaction (childEvent)="message=$event" [myName]="myName"> </app-component-interaction>
   {{message}}
-  <app-pipes> </app-pipes>
+  <app-pipes> </app-pipes> -->
+
+  <router-outlet> </router-outlet>
 
 </body>
 </html > 
