@@ -6,17 +6,8 @@
   <title>Document</title>
 </head>
 <body>
-  <nav>
-    <a routerLink="/departments"><button>Departments</button></a>
-    <a routerLink="/employees"><button>Employees</button></a>
-  </nav>
 
-
-
-
-
-
-  <h1> {{title}} </h1>
+  <h1> {{title | uppercase}} </h1>
   <!-- <app-test></app-test>
   <app-event-binding></app-event-binding> <br>
   <app-property-binding> </app-property-binding> <br>
@@ -29,7 +20,9 @@
   {{message}}
   <app-pipes> </app-pipes> -->
 
-  <router-outlet> </router-outlet>
+  <!-- <router-outlet> </router-outlet> -->
 
+
+  <app-main></app-main>
 </body>
 </html > 

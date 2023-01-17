@@ -20,6 +20,13 @@ import { DepartmentListComponent } from './department-list/department-list.compo
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DepartmentDetailComponent } from './department-detail/department-detail.component';
+import { TriangleTaskComponent } from './triangle-task/triangle-task.component';
+import { ClassAComponent } from './class-a/class-a.component';
+import { ClassBComponent } from './class-b/class-b.component';
+import { ClassCComponent } from './class-c/class-c.component';
+import { TriangleService } from './triangle.service';
+import { MainComponent } from './main/main.component';
+import { ChildComponent } from './main/child/child.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,13 @@ import { DepartmentDetailComponent } from './department-detail/department-detail
     DepartmentListComponent,
     EmployeeListComponent,
     PageNotFoundComponent,
-    DepartmentDetailComponent
+    DepartmentDetailComponent,
+    TriangleTaskComponent,
+    ClassAComponent,
+    ClassBComponent,
+    ClassCComponent,
+    MainComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +58,7 @@ import { DepartmentDetailComponent } from './department-detail/department-detail
     FormsModule,
     HttpClientModule
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService, TriangleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

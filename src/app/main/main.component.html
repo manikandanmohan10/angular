@@ -1,0 +1,6 @@
+<input #value type="text">
+From Child: <input type="text" value={{parentData}}>
+
+<input type="button" value="Submit" (click)="updateChildData(value)">
+<br>
+<app-child (parent)=updateParentData($event) [child]="childData"></app-child>

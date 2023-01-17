@@ -4,6 +4,10 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
   selector: 'app-department-list',
   template: `
+  <nav>
+    <a routerLink="/departments"><button>Departments</button></a>
+    <a routerLink="/employees"><button>Employees</button></a>
+  </nav>
     <h2> Department List </h2>
     <ul style="list-style-type: none">
       <li (click)="onSelect(dept)" [class.selected]="isSelected(dept)" *ngFor="let dept of departments">
