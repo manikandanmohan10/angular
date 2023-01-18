@@ -12,7 +12,7 @@ export class MainComponent {
   updateChildData(paretnValue: any){
     this.childData = paretnValue.value;
   }
-
+  
   updateParentData(event: any){
     this.parentData = event
   }

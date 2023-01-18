@@ -27,6 +27,9 @@ import { ClassCComponent } from './class-c/class-c.component';
 import { TriangleService } from './triangle.service';
 import { MainComponent } from './main/main.component';
 import { ChildComponent } from './main/child/child.component';
+import { SubjectComponent } from './subject/subject.component';
+import { ComponentAComponent } from './component-a/component-a.component';
+import { ComponentBComponent } from './component-b/component-b.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,10 @@ import { ChildComponent } from './main/child/child.component';
     ClassBComponent,
     ClassCComponent,
     MainComponent,
-    ChildComponent
+    ChildComponent,
+    SubjectComponent,
+    ComponentAComponent,
+    ComponentBComponent
   ],
   imports: [
     BrowserModule,
