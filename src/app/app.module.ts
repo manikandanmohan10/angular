@@ -30,6 +30,9 @@ import { ChildComponent } from './main/child/child.component';
 import { SubjectComponent } from './subject/subject.component';
 import { ComponentAComponent } from './component-a/component-a.component';
 import { ComponentBComponent } from './component-b/component-b.component';
+import { ObservableComponent } from './observable/observable.component';
+import { ServiceComponent } from './service/service.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,10 @@ import { ComponentBComponent } from './component-b/component-b.component';
     ChildComponent,
     SubjectComponent,
     ComponentAComponent,
-    ComponentBComponent
+    ComponentBComponent,
+    ObservableComponent,
+    ServiceComponent,
+    LifecycleHooksComponent
   ],
   imports: [
     BrowserModule,
