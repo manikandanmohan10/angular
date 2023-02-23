@@ -37,7 +37,7 @@ export class LifecycleHooksComponent implements
   ngDoCheck(): void {
     console.log('From ngDoCheck');
     // this.name = this.val
-    this.name = 7
+    // this.name = 7
     this.cdRef.detectChanges()
   }
 
@@ -58,7 +58,7 @@ export class LifecycleHooksComponent implements
   // It'll get called after view got initialized
   ngAfterViewChecked(){
     console.log('From ngAfterViewChecked');
-    this.name = 0
+    // this.name = 0
     this.cdRef.detectChanges()
   }
 }

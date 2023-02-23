@@ -20,7 +20,7 @@ export class ComponentBComponent {
           this.message = message
       } else {
           // clear messages when empty message received
-          this.messages = [];
+          this.messages = [ ];
       }
   });
   }

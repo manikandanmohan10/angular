@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +33,9 @@ import { ComponentBComponent } from './component-b/component-b.component';
 import { ObservableComponent } from './observable/observable.component';
 import { ServiceComponent } from './service/service.component';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { FormsComponent } from './forms/forms.component';
+import { LoginComponent } from './login/login.component';
+import { ClockComponent } from './clock/clock.component';
 
 @NgModule({
   declarations: [
@@ -62,12 +65,16 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     ComponentBComponent,
     ObservableComponent,
     ServiceComponent,
-    LifecycleHooksComponent
+    LifecycleHooksComponent,
+    FormsComponent,
+    LoginComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [EmployeeService, TriangleService],

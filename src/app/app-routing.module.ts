@@ -8,16 +8,20 @@ import { TriangleTaskComponent } from './triangle-task/triangle-task.component';
 import { ClassAComponent } from './class-a/class-a.component';
 import { ClassBComponent } from './class-b/class-b.component';
 import { ClassCComponent } from './class-c/class-c.component';
+import { FormsComponent } from './forms/forms.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/a', pathMatch: 'full' },
+  { path: '', redirectTo: '/forms/register', pathMatch: 'full' },
   // { path: 'departments', component: DepartmentListComponent },
   // { path: 'departments/:id', component: DepartmentDetailComponent },
   // { path: 'employees', component: EmployeeListComponent },
   // { path: "**", component: PageNotFoundComponent }
-  { path: 'a', component: ClassAComponent },
-  { path: 'b', component: ClassBComponent },
-  { path: 'c', component: ClassCComponent }
+  // { path: 'a', component: ClassAComponent },
+  // { path: 'b', component: ClassBComponent },
+  // { path: 'c', component: ClassCComponent },
+  {path: 'forms/register', component: FormsComponent},
+  {path: 'forms/login', component: LoginComponent}
 
 ]
 @NgModule({
